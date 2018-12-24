@@ -3,12 +3,13 @@
   "version": "0.5.0",
   "description": "Typescript library to aid DApp development on VeChain Thor",
   "main": "dist/index.js",
+  "module": "es6/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc -p . && tsc -m es6 --outDir ./es6 -p .",
     "lint": "tslint -p .",
-    "prepare": "rm -rf dist/; npm run build",
-    "test": "tslint -p . && NODE_ENV=test TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha --require ts-node/register --timeout 20000 --recursive  './**/*.test.ts'",
+    "prepare": "rm -rf dist/ es6/; npm run build",
+    "test": "tslint -p . && NODE_ENV=test mocha --require ts-node/register --timeout 20000 --recursive  './**/*.test.ts'",
     "cover": "NODE_ENV=test nyc npm t",
     "coverall": "NODE_ENV=test nyc npm t && nyc report --reporter=text-lcov | coveralls"
   },
