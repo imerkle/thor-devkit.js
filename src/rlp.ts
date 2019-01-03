@@ -1,5 +1,5 @@
-import BigNumber from 'bignumber.js'
 import * as rlp from 'rlp'
+import BN from 'bignumber.js';
 
 export class RLP {
     constructor(readonly profile: RLP.Profile) { }
@@ -66,7 +66,7 @@ export namespace RLP {
                     'expected non-negative safe integer')
             }
 
-            const bn = new BigNumber(data)
+            const bn = new BN(data)
             if (bn.isZero()) {
                 return {
                     encode() {
@@ -100,7 +100,7 @@ export namespace RLP {
                     if (buf.length === 0) {
                         return 0
                     }
-                    const bn = new BigNumber(buf.toString('hex'), 16)
+                    const bn = new BN(buf.toString('hex'), 16)
                     const num = bn.toNumber()
                     return Number.isSafeInteger(num) ? num : '0x' + bn.toString(16)
                 }
