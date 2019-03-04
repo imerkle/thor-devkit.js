@@ -2,7 +2,7 @@
   "name": "thor-devkit",
   "version": "0.7.0",
   "description": "Typescript library to aid DApp development on VeChain Thor",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "module": "es6/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
