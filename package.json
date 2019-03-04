@@ -3,8 +3,6 @@
   "version": "0.7.0",
   "description": "Typescript library to aid DApp development on VeChain Thor",
   "main": "src/index.ts",
-  "module": "es6/index.js",
-  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p . && tsc -m src --outDir ./es6 -p .",
     "lint": "tslint -p .",
