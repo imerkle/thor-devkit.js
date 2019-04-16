@@ -62,6 +62,7 @@ export namespace RLP {
                     assert(data.length > 2, ctx, 'expected valid hex string')
                 }
             } else {
+                //@ts-ignore
                 assert(Number.isSafeInteger(data) && data >= 0, ctx,
                     'expected non-negative safe integer')
             }
@@ -102,6 +103,7 @@ export namespace RLP {
                     }
                     const bn = new BN(buf.toString('hex'), 16)
                     const num = bn.toNumber()
+                    //@ts-ignore
                     return Number.isSafeInteger(num) ? num : '0x' + bn.toString(16)
                 }
             }
@@ -198,6 +200,7 @@ export namespace RLP {
             const bytes = this.bytes
             return {
                 decode() {
+                    //@ts-ignore
                     const zeros = '0'.repeat((bytes - buf.length) * 2)
                     return '0x' + zeros + buf.toString('hex')
                 }
@@ -280,6 +283,7 @@ function isDecString(str: string) {
 class RLPError extends Error {
     constructor(msg: string) {
         super(msg)
+        //@ts-ignore
         this.name = RLPError.name
     }
 }
