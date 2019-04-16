@@ -9,6 +9,7 @@
     "bin/**"
   ],    
   "scripts": {
+    "prepare": "npm run build",
     "build": "tsc -p ./tsconfig.prod.json",
     "lint": "tslint -p .",
     "test": "tslint -p . && NODE_ENV=test mocha --require ts-node/register --timeout 20000 --recursive  './**/*.test.ts'",
