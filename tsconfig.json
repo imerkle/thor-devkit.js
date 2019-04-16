@@ -13,5 +13,5 @@
     "lib": ["es2018"],
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "test/**/*.ts"]
 }

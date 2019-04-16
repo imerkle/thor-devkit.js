@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "declaration": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": false,
+        "resolveJsonModule": true,
+        "strict": true,
+        "target": "es5",
+        "lib": ["es2018"],
+        "outDir": "./dist"
+      },
+    "include": ["src/**/*.ts"]
+  }
