@@ -4,6 +4,10 @@
   "description": "Typescript library to aid DApp development on VeChain Thor",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "bin/**"
+  ],    
   "scripts": {
     "build": "tsc -p ./tsconfig.prod.json",
     "lint": "tslint -p .",
