@@ -4,7 +4,7 @@
   "description": "Typescript library to aid DApp development on VeChain Thor",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc -p . && tsc -m src --outDir ./es6 -p .",
+    "build": "tsc",
     "lint": "tslint -p .",
     "test": "tslint -p . && NODE_ENV=test mocha --require ts-node/register --timeout 20000 --recursive  './**/*.test.ts'",
     "cover": "NODE_ENV=test nyc npm t",
