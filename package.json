@@ -54,6 +54,7 @@
   },
   "homepage": "https://github.com/vechain/thor-devkit.js#readme",
   "devDependencies": {
+    "@ethereumjs/config-tsc": "^1.1.1",
     "@types/bip39": "^2.4.0",
     "@types/bn.js": "^4.11.3",
     "@types/chai": "^4.1.3",

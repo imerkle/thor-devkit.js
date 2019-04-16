@@ -92,6 +92,11 @@
     lodash "^4.17.5"
     to-fast-properties "^2.0.0"
 
+"@ethereumjs/config-tsc@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ethereumjs/config-tsc/-/config-tsc-1.1.1.tgz#e2755f16f4e0ee793029f19a9bc1a41dd833aba0"
+  integrity sha512-3ye6Nb+csMMSjUzY+AweIZW7FvrSGG694MJEkI/Ti2iBCt+iXLzO5BAs1c9Bl+QZcpYuaupgrV/iHr8MXL07WQ==
+
 "@types/bip39@^2.4.0":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@types/bip39/-/bip39-2.4.1.tgz#1a47b453b59a50d7b5856819b834c74798915eb3"

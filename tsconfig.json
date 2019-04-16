@@ -1,15 +1,17 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
-    "outDir": "./dist",
-    "inlineSourceMap": true,
+    "sourceMap": true,
     "declaration": true,
+    "module": "commonjs",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": false,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es5",
+    "lib": ["es2018"],
+    "outDir": "./dist"
   },
-  "include": [
-    "./src"
-  ]
+  "include": ["src/**/*.ts"]
 }
